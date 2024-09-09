@@ -9,6 +9,7 @@ public class ChildProcess {
         switch (args[0]) {
             case "B":
                 System.out.println("PID: " + getPID() + " PPID: " + getPPID() + " Letra: " + args[0]);
+                Thread.sleep(3000);
                 letters = new char[] { 'C', 'D' };
                 childs = new Process[letters.length];
                 for (int i = 0; i < letters.length; i++) {
@@ -18,6 +19,7 @@ public class ChildProcess {
                 System.exit(0);
             case "C":
                 System.out.println("PID: " + getPID() + " PPID: " + getPPID() + " Letra: " + args[0]);
+                Thread.sleep(3000);
                 letters = new char[] { 'E' };
                 childs = new Process[letters.length];
                 for (int i = 0; i < letters.length; i++) {
@@ -27,6 +29,7 @@ public class ChildProcess {
                 System.exit(0);
             case "D":
                 System.out.println("PID: " + getPID() + " PPID: " + getPPID() + " Letra: " + args[0]);
+                Thread.sleep(3000);
                 letters = new char[] { 'F', 'G' };
                 childs = new Process[letters.length];
                 for (int i = 0; i < letters.length; i++) {
@@ -36,6 +39,7 @@ public class ChildProcess {
                 System.exit(0);
             case "E":
                 System.out.println("PID: " + getPID() + " PPID: " + getPPID() + " Letra: " + args[0]);
+                Thread.sleep(3000);
                 letters = new char[] { 'H', 'I' };
                 childs = new Process[letters.length];
                 for (int i = 0; i < letters.length; i++) {
@@ -48,6 +52,7 @@ public class ChildProcess {
             case "H":
             case "I":
                 System.out.println("PID: " + getPID() + " PPID: " + getPPID() + " Letra: " + args[0]);
+                Thread.sleep(3000);
                 System.exit(0);
             default:
                 break;

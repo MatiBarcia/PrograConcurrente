@@ -7,6 +7,7 @@ public class ParentProcess {
         char[] letters;
 
         System.out.println("PID: " + getPID() + " PPID: " + getPPID() + " Letra: A");
+        Thread.sleep(3000);
         letters = new char[] { 'B' };
         childs = new Process[letters.length];
         for (int i = 0; i < letters.length; i++) {
@@ -27,7 +28,6 @@ public class ParentProcess {
     public static Process createChild(char letter) throws IOException {
         ProcessBuilder builder = new ProcessBuilder("java", "/home/mb/ProgC/TP1/Java/src/ChildProcess.java",
                 Character.toString(letter));
-        ;
         builder.inheritIO();
         return builder.start();
     }
